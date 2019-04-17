@@ -1,7 +1,8 @@
 {
   "name": "dashboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "Par Mais Bitbucket Monitoring Dashboard",
+  "main": "backend/src/index.js",
   "scripts": {
     "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
     "prestart": "cd frontend && npm run build",
