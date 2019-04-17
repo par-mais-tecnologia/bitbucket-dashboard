@@ -1,0 +1,12 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "prestart": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}

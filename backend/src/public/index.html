@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>PR Dashboard</title>
+    <script>
+      window.onload = function() {
+        fetch("/apis")
+          .then(response => response.json())
+          .then(data => {
+            const html = data.map(
+              spec => `<li>[${spec.method}] - ${spec.path}</li>`
+            );
+            endpoints.innerHTML = html.join("\n");
+          });
+      };
+    </script>
+  </head>
+  <body>
+    <p>This servers has the following endpoints:</p>
+    <ul id="endpoints"></ul>
+  </body>
+</html>
