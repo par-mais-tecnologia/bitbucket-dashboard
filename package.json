@@ -5,7 +5,7 @@
   "main": "backend/src/index.js",
   "scripts": {
     "setup": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "prestart": "cd frontend && npm run build",
+    "prestart": "npm run setup && cd frontend && npm run build",
     "start": "cd backend && npm start"
   },
   "author": "",
