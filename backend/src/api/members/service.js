@@ -6,7 +6,7 @@ const { sub } = require("../../utils");
 const listMembers = function(team) {
   return axios
     .get(`${conf.apiEndpoint}${sub({ team }, members)}`, { ...conf.auth })
-    .then(response => response.data.values.map(member => member.username));
+    .then(response => response.data.values.map(member => member.uuid));
 };
 
 module.exports = { listMembers };
